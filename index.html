@@ -11,16 +11,117 @@
 	<!-- Firebase Reference -->
 	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 	<!-- Moment.js CDN -->
-
+	<script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
 	<!-- Style -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Bree+Serif" rel="stylesheet">
 </head>
 
 <body>
+
 	<!-- jQuery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	
 	<!-- App -->
+
+	<div class="container">
+
+     	<!-- Jumbotron -->
+     	<div class="jumbotron panel jumbotron-primary">
+        	<h1 class="text-center">Train Schedule</h1>
+        	<h3 class="text-center">A Comprehensive Directory of South Florida's Trains</h3>
+      	</div>
+
+     	<div class="row">
+
+        	<div class="col-lg-12">
+
+		        <!-- Northbound Trains -->
+	         	<div class="panel panel-info" id="northbound">
+	            	<div class="panel-heading">
+	              		<h3 class="panel-title"><strong>Northbound Trains</strong></h3>
+	            	</div>
+	            	<div class="panel-body">
+	              		<table class="table table-hover" id='nb-train-table'>
+	                		<thead>
+	                  			<tr>
+	                    			<th>Train Name</th>
+	                    			<th>Destination</th>
+				                    <th>Frequency (min)</th>
+				                    <th>Next Arrival</th>
+				                    <th>Minutes Away</th>
+	                  			</tr>
+	                		</thead>
+	               	 		<tbody>
+	               			</tbody>
+	              		</table>
+	            	</div>
+	          	</div>
+
+	          	<!-- Southbound Trains -->
+	         	<div class="panel panel-info" id="southbound">
+	            	<div class="panel-heading">
+	              		<h3 class="panel-title"><strong>Southbound Trains</strong></h3>
+	            	</div>
+	            	<div class="panel-body">
+	              		<table class="table table-hover" id='sb-train-table'>
+	                		<thead>
+	                  			<tr>
+	                    			<th>Train Name</th>
+	                    			<th>Destination</th>
+				                    <th>Frequency (min)</th>
+				                    <th>Next Arrival</th>
+				                    <th>Minutes Away</th> 
+	                  			</tr>
+	                		</thead>
+	               	 		<tbody>
+	               			</tbody>
+	              		</table>
+	            	</div>
+	          	</div>
+
+	          	<!-- Add Train -->
+	          	<div class="panel panel-primary">
+	            	<div class="panel-heading">
+	              		<h3 class="panel-title"><strong>Add a Train</strong></h3>
+	            	</div>
+		            <div class="panel-body">
+		             	<!-- Entry Form -->
+			            <form id="train-form">
+			                <div class="form-group">
+			                	<label for="train-name-input">Train Name</label>
+			                	<input class="form-control" id="train-name-input" type="text">
+			                </div>
+			                <div class="form-group">
+			                	<label for="destination-input">Destination</label>
+			                	<input class="form-control" id="destination-input" type="text">
+			                </div>
+			                <div class="form-group">
+			                	<label for="direction-input">Direction (Northbound or Southbound)</label>
+			                	<input class="form-control" id="direction-input" type="text">
+			                </div>
+			                <div class="form-group">
+			                	<label for="first-train-input">First Train Time (HH:mm - Military Time)</label>
+			                	<input class="form-control" id="first-train-input" type="text">
+			                </div>
+			                <div class="form-group">
+			                	<label for="frequency-input">Frequency (Minutes)</label>
+			                	<input class="form-control" id="frequency-input" type="text">
+			                </div>
+			                <button class="btn btn-info" id="add-train-btn" type="submit">Add Train</button>
+			            </form>
+
+		            </div>
+
+          		</div>
+
+        	</div>
+
+    	</div>
+   
+    </div>
+
+
 
 
 

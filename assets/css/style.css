@@ -1,0 +1,40 @@
+.jumbotron {
+	background: url(http://www.bombardier.com/content/dam/Websites/bombardiercom/Banners/banner-670x280/bt/TALENT2-EMU-Germany-4427.jpg/_jcr_content/renditions/original); 
+	background-size: 100%;
+	background-position: center;
+}
+
+.jumbotron h1 {
+	font-family: 'Bree Serif', serif;
+	font-weight: bold;
+	font-size: 90px;
+	text-shadow: 3px 3px black;
+	color: white
+}
+
+.jumbotron h3 {
+	font-family: 'Bree Serif', serif;
+	font-size: 22px;
+	color: white;
+	text-shadow: 1px 2px black;
+}
+
+.panel-heading {
+	font-family: 'Archivo Black', sans-serif;
+}
+
+.panel-title {
+	font-family: :;
+}
+
+.panel-body th {
+	font-weight: bold;
+}
+
+#train-form {
+
+}
+
+.navbar-fixed-bottom .container{
+	margin-top: 50px;
+}
