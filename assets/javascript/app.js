@@ -12,7 +12,7 @@ messagingSenderId: "261979040305"
 firebase.initializeApp(config);
 
 
-const dbRef = firebase.database().ref('TimeSheet/employees');
+const dbRef = firebase.database().ref('TrainSchedule/trains');
 
 // Button for adding trains
 $("#add-train-btn").click(function(event) { 
@@ -22,7 +22,7 @@ $("#add-train-btn").click(function(event) {
     trainName: $("#train-name-input").val().trim(),
     destination: $("#destination-input").val().trim(),
     direction: $("#direction-input").val().trim(),
-    firstTrainTime: moment($("#first-train-input").val().trim(), "HH:mm"),
+    firstTrainTime: moment($("#first-train-input").val().trim(), "HH:mm").format("X"),
     frequency: $("#frequency-input").val().trim()
   };
 
@@ -58,6 +58,7 @@ dbRef.on("child_added", function(childSnapshot, prevChildKey) {
 
 		// Next Train
 		const nextTrain = moment().add(tMinutesTillTrain, "minutes");
+		const nextTrainNewTime = moment.unix(nextTrain).format("HH:mm");
 		// console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
 
 	newTrain.nextArrival = nextTrain;
