@@ -1,7 +1,18 @@
+body {
+	background-image: url("http://comchurch.org.uk/wp-content/uploads/2017/11/train-tracks-to-the-horizon-landscape.jpg");
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+.panel {
+	opacity: 0.9;
+}
+
 .jumbotron {
 	background: url(http://www.bombardier.com/content/dam/Websites/bombardiercom/Banners/banner-670x280/bt/TALENT2-EMU-Germany-4427.jpg/_jcr_content/renditions/original); 
 	background-size: 100%;
 	background-position: center;
+	opacity: 1.0;
 }
 
 .jumbotron h1 {
@@ -29,12 +40,4 @@
 
 .panel-body th {
 	font-weight: bold;
-}
-
-#train-form {
-
-}
-
-.navbar-fixed-bottom .container{
-	margin-top: 50px;
 }

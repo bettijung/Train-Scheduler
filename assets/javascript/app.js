@@ -13,6 +13,9 @@ firebase.initializeApp(config);
 
 const dbRef = firebase.database().ref('TrainSchedule/trains');
 
+// =========================================================
+// =========================================================
+
 // Button for adding trains
 $("#add-train-btn").click(function(event) { 
 	event.preventDefault();
@@ -27,9 +30,10 @@ $("#add-train-btn").click(function(event) {
 
 	dbRef.push(newTrain);
 	// console.log(newTrain);
-  
 	resetInputs();
 });
+
+// =========================================================
 
 // Firebase event for adding train to the database and a row when a user adds an entry
 dbRef.on("child_added", function(childSnapshot, prevChildKey) {
@@ -56,7 +60,7 @@ dbRef.on("child_added", function(childSnapshot, prevChildKey) {
 
 		// Next Train
 		const nextTrain = moment().add(tMinutesTillTrain, "minutes");
-		// const nextTrainNewTime = nextTrain.format("HH:mm");
+		// const nextTrainNewTime = nextTrain.format("hh:mm tt");
 		// console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
 
 	newTrain.nextArrival = nextTrain;
@@ -76,6 +80,7 @@ dbRef.on("child_added", function(childSnapshot, prevChildKey) {
 
 });
 
+// =========================================================
 
 // Function to add New Train row to table
 function createTrainRow(tra) {
@@ -89,6 +94,7 @@ function createTrainRow(tra) {
 	return trow;
 }
 
+// =========================================================
 
 // Function to reset form inputs
 function resetInputs() {
