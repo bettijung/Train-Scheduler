@@ -13,6 +13,7 @@ body {
 	background-size: 100%;
 	background-position: center;
 	opacity: 1.0;
+	height: 250px;
 }
 
 .jumbotron h1 {
