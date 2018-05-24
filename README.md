@@ -7,7 +7,7 @@
 App can be used [here](https://bettijung.github.io/Train-Scheduler/).
 [App Demo](https://drive.google.com/file/d/1sK6LZj0Nau7PVdUE1c5YQPmZ-Pr7Q2DW/view)
 
-<img src="train-scheduler-demo.gif" height="400px" width="350">
+<img src="train-scheduler-demo.gif" height="400px" width="500">
 
 ### Technologies Used
 * Firebase Database
