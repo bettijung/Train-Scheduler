@@ -5,6 +5,7 @@
 
 ## View of the App
 App can be used [here](https://bettijung.github.io/Train-Scheduler/).
+
 <img src="train-scheduler-demo.gif" height="400px" width="600">
 
 ### Technologies Used
