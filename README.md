@@ -3,6 +3,12 @@
 	* The App works by providing a form where the user can input a new train's data, and 2 tables that display the Northbound and Southbound trains' information.
 	* The train company can use this app to add and manage their trains in an organized fashion.
 
+## View of the App
+App can be used [here](https://bettijung.github.io/Train-Scheduler/).
+[App Demo](https://drive.google.com/file/d/1sK6LZj0Nau7PVdUE1c5YQPmZ-Pr7Q2DW/view)
+
+<img src="train-scheduler-demo.gif" height="400px" width="350">
+
 ### Technologies Used
 * Firebase Database
 * JavaScript, HTML, CSS, Bootstrap
